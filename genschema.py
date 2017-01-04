@@ -31,7 +31,7 @@ def generate_rect(pinscfg):
     return '<rect x="7" y="7" fill="none" stroke="#231F20" stroke-width="0.7" stroke-miterlimit="10" width="{}" height="{}"/>\n'.format(w,h)
 
 def generate_pins(pinscfg):
-    pins=[Pin(p) for p in pinscfg]
+    pins=[Pin(p[0]) for p in pinscfg]
     n=(len(pins)+1)/2
     #rw=50
     #rh=(n+1)*8
